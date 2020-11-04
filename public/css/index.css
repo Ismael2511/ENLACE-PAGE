@@ -1,0 +1,137 @@
+/**VARIABLES */
+:root{
+    --fnt-roboto: 'Roboto', sans-serif;
+    --clr-red:#D64631;
+    --clr-blue:#1C3C6B;
+    --clr-darkBlue:#013671;
+    --clr-darkBlue-h:#152c4e;
+    --clr-gray:#707070;
+    --clr-lightGray:#F5F5F5;
+    --clr-darkGray:#414141;
+    --trs-250-ei: 250ms ease-in;
+}
+/**--------- */
+/**COLORS */
+.clr-red{
+    color: var(--clr-red);
+}
+.clr-darkBlue{
+    color: var(--clr-darkBlue);
+}
+.clr-gray{
+    color: var(--clr-gray);
+}
+.clr-lightGray{
+    color: var(--clr-lightGray);
+}
+.clr-darkGray{
+    color: var(--clr-darkGray);
+}
+/**------ */
+/** GENERAL TYPOGRAPHY */
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 33px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+}
+.fnt-light{
+    font-weight: 200;
+}
+.fnt-medium{
+    font-weight: 450;
+}
+.fnt-bold{
+    font-weight: 900;
+}
+
+@media (max-width:900px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+/**BUTTONS */
+.btn{
+    padding: 1.2rem 2.5rem;
+    border-radius: 50px;
+    color: white;
+    transition: var(--trs-250-ei);
+    cursor: pointer;
+    border: none;
+    margin: 1rem 0;
+    width: 350px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-blue{
+    background-color: var(--clr-darkBlue);
+}
+.btn-blue:hover{
+    background: var(--clr-darkBlue-h);
+}
+@media screen and (max-width:900px){
+    .btn{
+        padding: 1rem;
+        width: 90%;
+    }
+}
+/**-----------------------------
+ * --------LOADING PAGE---------
+ * ----------------------------*/
+
+ .loading-page{
+     width: 100%;
+     height: 100%;
+     background-color: var(--clr-lightGray);
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     z-index: 999999;
+ }
+ .loading-pic{
+     width: 10rem;
+     height: 10rem;
+     padding: 1rem;
+ }
+ .loading-pic img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ .loading-text{
+     color: var(--clr-darkBlue);
+     text-transform: uppercase;
+ }
+.fade-enter-active, .fade-leave-active{
+    transition: opacity 1s;
+}
+.fade-enter,.fade-leave-to{
+    opacity: 0;
+}

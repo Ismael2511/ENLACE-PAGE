@@ -1,0 +1,120 @@
+@import "index.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**------------------ */
+
+.main-sign{
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background: var(--clr-lightGray);
+}
+.logo{
+    padding: 1rem 0;
+    margin: 0 0 1rem 0;
+}
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(4px 0 2px rgb(184, 184, 184));
+}
+
+/**-----INPUTS-----*/
+.container-input{
+    font-family: 'Roboto', sans-serif;
+    width: 60%;    
+    height: 100%;   
+    min-height: 100vh;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    background: var(--clr-lightGray);
+}
+.sign-inp{
+    margin: .5rem 0;
+    width: 100%;
+    text-align: center;
+}
+.sign-inp p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.input-field{
+    padding: .8rem 1rem;
+    width: 80%;
+    background: #F8F8F8;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px 3px #e7e7e7;
+    border-radius: 50px;
+    margin: 1rem 0;
+    font-size: 16px;
+    color: var(--clr-gray);
+    transition: var(--trs-250-ei);
+}
+.input-field:focus{
+    outline: none !important;
+    border: 2px solid rgb(173, 189, 219);
+    box-shadow: 0 0 5px 1px rgb(161, 182, 221);
+}
+
+@media(max-width:900px){
+    .container-input{
+        width: 100%;    
+        padding: 2rem 0;
+        align-items: center;
+        text-align: center;
+    }
+    .sign-inp{
+        width: 90%;
+        margin: .5rem 0;
+    }
+}
+/**--------------- */
+.sign-pic{
+    background-color: white;
+    position: fixed;
+    background-attachment: fixed;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+
+}
+.sign-pic img{
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.sign-pic::before{
+    content: '';
+    position: absolute;
+    background: #013671;
+    width: 100%;
+    height: 30%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media(max-width:900px){
+    .sign-pic{
+        display: none;
+    }
+}
+.check-valid{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.check-valid input{
+    margin: 0 .5rem;
+}
