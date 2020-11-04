@@ -7,7 +7,7 @@
         </form>
 
         <p v-if="frutas.length != 2">Hay mas de dos frutas</p>
-        <p v-else>Estan aceptados</p>
+        <p v-else>Muchso Aceptados</p>
    </div>
     
 
