@@ -7,10 +7,17 @@
     --clr-darkBlue-h:#152c4e;
     --clr-gray:#707070;
     --clr-lightGray:#F5F5F5;
+    --clr-grayMid:#EDEDED;
     --clr-darkGray:#414141;
     --trs-250-ei: 250ms ease-in;
 }
 /**--------- */
+.container{
+    width: 95%;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
 /**COLORS */
 .clr-red{
     color: var(--clr-red);
@@ -27,6 +34,9 @@
 .clr-darkGray{
     color: var(--clr-darkGray);
 }
+.clr-gray a:hover{
+    text-decoration: underline;
+}
 /**------ */
 /** GENERAL TYPOGRAPHY */
 h1{
@@ -41,14 +51,28 @@ h3{
 h4{
     font-size: 20px;
 }
+h5{
+    font-size:18px ;
+}
 p{
     font-size: 16px;
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--clr-gray);
+}
+.big-text{
+    padding: 1rem 0;
 }
 .fnt-light{
     font-weight: 200;
 }
 .fnt-medium{
     font-weight: 450;
+}
+.fnt-regular{
+    font-weight: 700;
 }
 .fnt-bold{
     font-weight: 900;
@@ -97,7 +121,7 @@ p{
 @media screen and (max-width:900px){
     .btn{
         padding: 1rem;
-        width: 90%;
+        width: 70%;
     }
 }
 /**-----------------------------

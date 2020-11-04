@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:var(--fnt-roboto);
 }
 /**------------------ */
 
@@ -117,4 +118,257 @@
 }
 .check-valid input{
     margin: 0 .5rem;
+}
+
+
+/**-----------------------------
+ * ------ AFTER REGISTER -------
+ * ---------------------------*/
+
+.icon-cont img{
+
+    position: relative;
+    width: 82px;
+    height: 93px;
+    left: 42px;
+    top: 16px; 
+    border: 1px solid blue;
+}
+
+.ContAfterReg-input{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;    
+    height: 100%; 
+    min-height: 50vh;
+    padding: 0rem 8rem;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background: var(--clr-lightGray);
+    border: 1px solid red;
+
+}
+
+.InfoCompText-cont{
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    width: 100%;    
+    height: 50%; 
+    display: flex; 
+    padding: 2rem 6rem;
+    border: 1px solid green;
+}
+
+.AfterSignBtt-cont{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;    
+    height: 50%; 
+    display: flex; 
+    padding: 2rem 6rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+    
+}
+/**--------------------
+ * ------ LOGIN -------
+ * -------------------*/
+.recovery-sign p{
+    padding: .4rem 0;
+}
+.recovery-sign{
+    text-align: center;
+}
+
+/**-----------------------------
+ * ----- PASSWORD RECOVERY------
+ * ---------------------------*
+
+.container-recovery{
+    background: #F5F5F5;
+    border: 1px solid red;
+}
+.logo-recovery{
+    border: 1px solid blue;
+    width: 101px;
+    height: 105px;
+    top: 43px;
+    left: 53px;
+    position: absolute;
+
+}
+.logo-recovery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-recovery{
+    border: 1px solid green;
+    width: 707px;
+    height: 506px;
+    margin: 0 auto;
+    margin-top: 244px;
+    background: #EDEDED;
+    box-shadow: 0px 0px 10px 3px rgba(147, 147, 147, 0.25);
+    border-radius: 39px;
+}
+.info{
+    color: #013671;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    margin-bottom: 50px;
+}
+.input-recovery {
+    border: 1px solid purple;
+}
+.input-recovery p{
+    text-align: center;
+    color: #013671;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.input-email-recovery{
+    padding: 1rem;
+    width: 70%;
+    background: #F8F8F8;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px 3px #e7e7e7;
+    border-radius: 50px;
+    margin: .5rem 0;
+    font-size: 16px;
+    color: var(--clr-gray);
+    transition: var(--trs-250-ei);
+    margin-left: 15%;
+}
+.input-email-recovery:focus{
+    outline: none !important;
+    border: 2px solid rgb(173, 189, 219);
+    box-shadow: 0 0 5px 1px rgb(161, 182, 221);
+}
+.btn-recovery{
+    padding: 1.3rem 3.5rem;
+    border-radius: 50px;
+    color: white;
+    transition: var(--trs-250-ei);
+    cursor: pointer;
+    border: none;
+    margin: 1rem 0;
+    width: 250px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #013671;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.btn-recovery:hover{
+    background: #152c4e;
+}
+@media (max-width:808px){
+    .main-recovery{
+      width: 100%;
+    }
+.logo-recovery img{
+   left: 43%;
+}
+.main-recovery{
+    background: #F5F5F5;;
+    box-shadow: none;
+}
+}
+@media (max-width:700px){
+    .btn-recovery{
+        margin-left: 20%;
+    }
+}
+*/
+
+.main-recovery{
+    background: var(--clr-lightGray);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.recovery-logo{ 
+    padding: 1rem 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+.recovery-logo img{
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: unset;
+}
+.recovery-card{
+    background: var(--clr-grayMid);
+    padding: 2.5rem;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 1px rgb(172, 172, 172);
+
+}
+
+.recovery-card .big-text h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}   
+.input-recovery{
+    margin: 1rem 0;
+}
+.input-recovery p{
+    letter-spacing: 1px;
+}
+@media screen and (max-width:900px){
+    .recovery-card{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    .recovery-logo{
+       justify-content: center;
+    }
+    .main-card{
+        margin: 2rem 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: unset;
+    }
+    .recovery-card{
+        background:unset;
+        padding: unset;
+        text-align: center;
+        width: 100%;
+        height: unset;
+        border-radius: 10px;
+        box-shadow:unset;
+    }
 }

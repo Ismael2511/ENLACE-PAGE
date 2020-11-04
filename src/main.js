@@ -5,6 +5,8 @@ import Register from './components/Register.vue';
 import Login from './components/Login.vue';
 import LoadingPage from './components/LoadingPage';
 import Prueba from './components/Prueba';
+import Recovery from './components/Recovery';
+import AfterRegister from './components/AfterRegister';
 
 
 Vue.config.productionTip = false
@@ -15,7 +17,10 @@ const routes = [
   {path:'/Loading', component: LoadingPage},
   {path:'/', component: Login},
   {path:'/Register', component: Register},
-  {path:'/Prueba', component: Prueba}
+  {path:'/Prueba', component: Prueba},
+  {path:'/Recovery', component: Recovery},
+  {path:'/AfterRegister', component: AfterRegister},
+
 ];
 const router = new VueRouter({
   routes,
