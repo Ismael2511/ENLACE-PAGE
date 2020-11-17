@@ -19,7 +19,7 @@
                 <input type="text" class="input-field">
             </div>
             <div class="sign-inp">
-                <p class="clr-darkBlue fnt-medium">RNC</p>
+                <p class="clr-darkBlue fnt-medium">RNC.</p>
                 <input type="text" class="input-field">
             </div>
             <div class="sign-inp">
